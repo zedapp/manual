@@ -30,7 +30,7 @@ your filter query.
 * `:@` starting your query with `:@`, following a search string, will jump to the first definition of a _symbol_ matching that search string in the current file.
     * **Example**:, the query `:@toString` will jump to the defintion of the `toString` function or method. A shortcut to this functionality is `Command-R`/`Ctrl-R`.
     * **Shortcut**: `Command-R`/`Ctrl-R`.
-* `@` starting your query with `@` following by a search string will match symbols defined in the whole project.  
+* `@` starting your query with `@` following by a search string will match symbols defined in the whole project.
     * **Example**: the query `@toString` will show all definitions of `toString` functions and methods in the current project.
     * **Shortcut**: `Command-J`/`Ctrl-J`.
 * `space` pressing the spacebar in an empty query box inserts the path of the current open session.

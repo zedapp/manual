@@ -1,6 +1,30 @@
 Changelog
 =========
 
+0.11.5
+------
+* Modes:
+    * Ruby: symbol indexing
+    * Python: improved symbol indexing
+    * C: symbol indexing
+    * PHP: improved symbol indexing
+    * Java: symbol indexing
+    * C#: symbol indexing
+    * GLSL syntax highlighting
+    * Stylus syntax highlighting
+* Two new packages made part of the default distribution:
+    * follow-complete: offers quasi-intelligent completions for `x.y` property accesses/method calls for many languages (currently enabled for JavaScript, Python, Ruby, Go, Java, C#, Groovy, Lua, Nix, Rust and Scala)
+    * bracket-check: checks matching brackes (currently enabled for Clojure, Go, Dart, Python, Ruby, Java, and C#)
+* Local (Chrome) directories with more than 100 files/directories did not show up completely before, this is now fixed (by farnoy)
+* Projects are automatically indexed (for symbols and code completion) the first time they are opened, you can do this manually with `Tools:Index Project`.
+* Search project now only searches known file types and does so more sequentially, which should prevent crashes
+* Key bindings:
+    * Default keybinding for `Find:Next` on Linux/Windows/ChromeOS is now `Ctrl-G`, and `Find:Previous` is now `Ctrl-Shift-G`.
+    * `Nativate:Reload Filelist` is now bound to `Command-Shift-L` on Mac and `Ctrl-Shift-L` on Windows/Linux/ChromeOS as well as `F5` on both.
+* Dotfiles (files starting with `.`) now appear in the file list, except those defined in `gotoExcludes` (by default `.git`)
+* Goto matching algorithm tweaked, now also does fuzzy matching again (although with a lower score).
+* File renaming fixes (by TheKiteEatingTree)
+
 0.11.4
 ------
 * Goto improvements:
@@ -14,6 +38,7 @@ Changelog
     * New query syntax: `searchphrase [-flags] [filepath pattern]`
       for example: `hello` or `hello *.js` or `hello -i` (case insensitive search) `he*llo -ie /docs/*.md` (case insensitive regex search).
       Supported flags: `-i` (case insensitive matching) and `-e` (regex match).
+* Batched undo: you no longer have to run undo for every character, certain operations (including typing and deleting) are now batched up.
 * Better behavior when "closing" a split (going from 2 to 1 splits): the split left will now contain the file in the active split.
 * Bug fix: Fix window positioning after restore
 * Bug fix: Better recovery from broken configuration

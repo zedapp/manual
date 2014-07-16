@@ -2,8 +2,6 @@ Welcome to Zed
 ==============
 For the latest Zed news check out http://zedapp.org and check out the Manual project for documentation.
 
-Zed is open source, but not free to develop. If you use Zed, please consider paying to ensure further development: http://zedapp.org/buy
-
 To start editing files in this project, press `Command-E` on Mac, or `Ctrl-E` on Windows/Linux/ChromeOS. If you prefer a tree view of your files, press `Command-T`/`Ctrl-T`. To find all available commands and keyboard shortcut press `Command-.`/`Ctrl-.`
 
 Useful keys
@@ -13,7 +11,7 @@ Useful keys
     * In an empty box, press space to complete the directory of the currently open document.
     * Press `Up`/`Down` or `Tab`/`Shift-Tab` to walk over results
     * Pressing `Return` either opens the selected file, or creates a new file with the name you typed in if none currently exists.
-* `Command-.`/`Ctrl-.`: Run an editor command (`Command-Shift-.`/`Ctrl-Shift-.` to see commands as a tree).
+* `Command-.`/`Ctrl-.`: Run an editor command.
 * `Cmd-T`/`Ctrl-T`: Show file tree (useful for exploring projects you're
   not familiar with). Keys within the tree:
     * `Up`: Move up in the tree

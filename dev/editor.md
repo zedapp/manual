@@ -38,7 +38,7 @@ Commands
 Almost all user actions are executed through commands. The base implementation of commands can be found `app/js/command.js`. Commands are defined all over the code base, usually organized by module. A command can be defined by importing the command module and invoking `define` on it:
 
     var command = require("./command");
-    
+
     command.define("Command name", {
         exec: function(editor, session) {
            // Code to execute when command is triggered

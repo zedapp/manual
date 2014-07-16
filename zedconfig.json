@@ -1,8 +1,46 @@
 {
-    "preferences": {
-        "showGutter": false,
-        "showPrintMargin": false,
-        "highlightActiveLine": false,
-        "showContextBar": true
+    preferences: {
+        showGutter: false,
+        showPrintMargin: false,
+        highlightActiveLine: false
+    },
+    modes: {
+        markdown: {
+            extensions: ["!md"]
+        },
+        zed_manual: {
+            name: "Zed Manual Mode",
+            highlighter: "mode/zed_ui",
+            extensions: [
+                "md",
+            ],
+
+            preferences: {
+                showGutter: false,
+                showPrintMargin: false,
+                highlightActiveLine: false,
+                wordWrap: true,
+                wordWrapColumn: 80
+            },
+
+            commands: {
+                "Manual:Enter": {
+                    scriptUrl: "/default/command/manual_enter.js",
+                    inputs: {
+                        lines: true,
+                        cursor: true
+                    },
+                    internal: true
+                }
+            },
+
+            keys: {
+                "Manual:Enter": "Enter"
+            },
+
+            handlers: {
+                click: ["Manual:Enter"]
+            }
+        }
     }
 }

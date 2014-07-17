@@ -1,6 +1,27 @@
 Changelog
 =========
 
+0.12.0
+------
+This one's a big release, both internally (the whole code base has been refactored to use ES6-promises instead of node.js-style callbacks) and externally: there's now an optional "traditional" UI mode that shows you a persistent file tree on the left and a menu bar along the top. In addition, there's now a basic UI for managing snippets.
+
+* First-run screen that asks you to pick a UI layout. This is fully configurable later on, via:
+    * New `persistentTree` preference that, when enabled, shows a file tree along the left.
+    * New `showMenus` preference that shows a menu along the top with a (curated) list of common commands (and their key bindings).
+* Snippet manager (`Snippet:List`, `Snippet:Add`) shows and adds snippets to the mode of the currently active session.
+* `File:New` command (bound to `Command-N`/`Ctrl-N`) that opens the Goto UI with the directory of the currently active file prefilled.
+* ZPM and Snippet manager use special "Zed UI" Ace mode that highlights "buttons" more like buttons, so you can tell they're clickable.
+* Language modes can now have a `completionTriggers` key with characters that should automatically trigger code completion, e.g. `.` for JavaScript or `->` for PHP. And as a result...
+* Code completion now automatically triggers after typing a `completionTriggers` sequence of characters (this can be switched on/off with the `autoTriggerCompletion` preference).
+* Big Manual overhaul
+* Modes:
+    * Scala symbol indexing
+    * PHP follow complete support
+    * Clojure follow complete support
+    * Gherkin mode (by lalomartins)
+* Themes:
+    * Base16 theme (by farnoy)
+
 0.11.5
 ------
 * Modes:

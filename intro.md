@@ -31,6 +31,8 @@ Useful keys
     * `Shift-Tab`/`Down`: Select previous completion
     * `Enter`: Pick selected completion
     * `Esc`: Close completion box
+* `Command-,`: open the preferences UI.
+
 
 More info
 ---------

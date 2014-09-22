@@ -1,7 +1,7 @@
 Commands and Keys
 -----------------
 
-Every operation in Zed happens through _commands_. For instance, to delete a character in a file use the `Edit:Delete` command. To move the cursor up use the `Cursor:Up` command. Commands can be run in four ways:
+Every operation in Zed is executed through _commands_. For instance, to delete a character in a file use the `Edit:Delete` command. To move the cursor up use the `Cursor:Up` command. Commands can be run in four ways:
 
 1. By name using the `Command:Enter Command` command (`Command-.`/`Ctrl-.`).
 2. Using a keyboard shortcut

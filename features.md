@@ -12,10 +12,6 @@ Zed Features
         (including Chromebooks)
      2. Installation is easy with just a few clicks
      3. Upgrades are automatic
-     4. Configuration are automatically synchronized between all computers
-        logged into with the same Google account.
-     5. Special "Notes" space is stored in Google Drive and synchronized between
-        computers automatically as well. (Beta feature)
 4. **State preservation**: Zed preserves your editor state completely: the state
    of your splits, recency of open files, cursor and scroll positions, even part
    of the undo history for open files.

@@ -13,10 +13,9 @@ Then, you have two options. The simplest option (if you don't use zedrem often),
 
     ./zedrem <directory-to-edit>
 
-This will give you a URL you need to copy and paste into your Zed startup dialog. After pasting the URL, press Enter and a new Zed editor window will open. To stop editing, close the window and kill the Zed binary on the server with Ctrl-C.
+This will give you a URL you need to copy and paste the "Remote Folder" option in the Zed project picker (this screen also explains the steps above). To stop editing, close the window and kill the Zed binary on the server with Ctrl-C.
 
 The second option is to pass in your user-specific "zedrem key" when running zedrem. You can obtain this key by running the `Configuration:Zedrem:Get User Key` command (or looking in your `/user.json` file in your Configuration project under preferences / zedrem / userKey). Then, run zedrem as follows:
-
 
     ./zedrem -key yourkeyhere <directory-to-edit>
 

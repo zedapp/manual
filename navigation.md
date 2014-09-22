@@ -3,9 +3,8 @@ Navigating a Project
 
 So, you now opened your first Zed project. Now, how do you navigate it? Depending on the choice you made in the initial screen that asked you what UI mode you preferred, you either now see a file tree along the left or not. If you chose the "Chromeless" option, don't panic. In whichever mode, you can always open the file tree using the `Navigate:File Tree` command (`Command-T` on Mac, `Ctrl-T` on other OSes). Another way is using the `Navigate:Goto` command (`Command-E` on Mac, `Ctrl-E` on other OSes). If you don't want to navigate to a specific _file_, but instead want to navigate to the declaration of a particular symbol (e.g. method or class) you can use `Navigate:Lookup Symbol` (`Command-J` on Mac, or `Ctrl-J` on other OSes). We'll go each of these options briefly.
 
-Goto/Lookup Symbol
-------------------
-
+Goto
+----
 Goto is Zed's powerful UI and preferred way to quickly navigate between files, within files, navigating between symbols and even _creating_ files. When activated using `Navigate:Goto` a box appears that you can type into. Along the bottom search results appear. When the Goto input box is empty, the list of results is ordered showing the most recently opened files first. This makes it a good way to navigate between a few files that you have to switch between quickly.
 
 When you type a search phrase, results will match it against all files in your projects as well as symbols as follows:

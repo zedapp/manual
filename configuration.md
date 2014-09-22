@@ -6,11 +6,15 @@ Configuration of Zed happen in two primary locations:
 1. The "Configuration" project which you can open from the Zed project picker.
 2. A /zedconfig.json file in your project.
 
-Zed implements configuration via an in-editor virtual file system that automatically synchronizes with Google Drive when connected to the Internet. As a result, your configuration is automatically synced between all your Chromes connected to your Google account. If you're interested, you can see the files by searching for them in your Drive:
+In the Chrome App version of Zed, the configuration by default is stored in an in-editor virtual file system that automatically synchronizes with Google Drive when connected to the Internet. As a result, your configuration is automatically synced between all your Chromes connected to your Google account. If you're interested, you can see the files by searching for them in your Drive:
 
     https://drive.google.com/#search/config%7C
 
 There are file watchers on all imported config files, which reload the config whenever changes are made to a file. For instance, you can change the `theme` setting to something else and within a few seconds you see the colors of all your editor windows (on all your devices) change.
+
+**Important:** In practice, Google's Google Drive synchronization is not very reliable, therefore it is recommended that you store your configuration elsewhere. To do so, click on the little edit (pen) icon next to the Configuration project in the project listing to select a directory to store your configuration files. A recommended location is e.g. your Dropbox folder.
+
+In the standalone version of Zed, configuration files are stored in `~/.config/zed/config` by default.
 
 Zed's configuration consist of a number of aspects:
 
@@ -104,7 +108,8 @@ Preferences
 Preferences can be set in multiple ways:
 
 * Using commands, e.g. "Configuration:Preferences:Toggle Context Bar", these will automatically update the value in your /user.json file.
-* By editing them by hand in your configuration JSON file
+* By editing them by hand in your configuration JSON file.
+* Using the preferences UI (`Configuration:Preferences`)
 
 All available preferences and their default values can be found in the /default/preferences.json file in the Configuration project. They can all be overridden in your /user.json or zedconfig.json file or any file you import from there.
 
@@ -282,4 +287,4 @@ To describe
 Packages
 --------
 
-To describe
+See: http://zedapp.org/2014/05/zed-package-manager/

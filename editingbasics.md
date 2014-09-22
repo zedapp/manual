@@ -13,6 +13,20 @@ Beyond the obvious up, down, left, right, page up, page down, here are some inte
 * `Cursor:Line Start`/`Cursor:Line End`: moves the cursor to the start resp. the end of the line.
 * `Cursor:To Matching Brace`/`Select:To Matching Brace`: moves/selects from the brace the cursor is currently at to the matching one.
 
+Zed also supports vim-style cursor movement. These keyboard combinations have the advantage of not having to move your hand to your cursor keys to move around. If you're familiar with vi or vim, they are generally the same keys you always use to move around together with the `Alt` key. Supported are:
+
+* `Alt-h`: move cursor to the left
+* `Alt-j`: move cursor down
+* `Alt-k`: move cursor up
+* `Alt-k`: move cursor to the right
+* `Alt-w`: move cursor one word to the right
+* `Alt-b`: move cursor one word to the left
+* `Alt-0`/`Alt-^`: move cursor to the start of the line
+* `Alt-$`: move cursor to the end of the line
+* `Alt-Shift-g`: move cursor to end of the file
+
+In addition, many of these also work together with `Shift` to use them to select text, e.g. `Alt-Shift-H` selects one character to the left.
+
 If one cursor isn't enough for you, have a look at Zed's support for multiple cursors: [cursors]
 
 Editing

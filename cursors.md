@@ -20,5 +20,4 @@ Zed supports editing with multiple cursors. These are relevant commands to use t
 
 Zed does not have a find and replace feature. It doesn't need it, the Zed way
 of doing it is searching for an instance of the string (or selecting it), then
-adding cursors on other instances using `Ctrl-Alt-Right` and `Ctrl-Alt-Left`,
-and then simply typing the replacement.
+adding cursors on other instances using `Cursor:Multiple:Add At Previous Instance Of Identifier` and `Cursor:Multiple:Add At Next Instance Of Identifier`, and then simply typing the replacement.

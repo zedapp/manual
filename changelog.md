@@ -1,6 +1,25 @@
 Changelog
 =========
 
+1.0.0
+-----
+
+* Unified UI: the separate project picker window is gone and has been integrated into editor windows (using same theming etc.). Similarly the first run, dropbox project, github picker windows have all been integrated as well.
+* The "Notes" space has been removed, due to too frequent data loss for users, we recommend to just use a local folder instead. If you were using Notes before and would like to access it still, enter "syncfs:" in the project picker search box and press Enter.
+* New preferences GUI offering a slightly more friendly way of changing preferences, access it via `Configuration:Preferences` (`Command-,`/`Ctrl-,`)
+* Window restore on relaunch: All windows are now restored after Zed quit (`Zed:Quit`) and restart.
+* Native window chrome (title bar) is now used in the standalone version of Zed as well as the Chrome App version on Linux.
+* Syntax highlighting added for TeX/LaTeX, Ada, Assembly, Cobol, diff files, FORTH, .gitignore, Jade, Lisp, Objective-C, Pascal, R, Scheme, SQL (including MySQL and Postges flavours), SVG, Tcl, Typescript, Vala, and a bunch more, some of which I never heard of — if Ace supports it, now we support it too. (by lalomartins)
+* Standalone: Windows version now uses Zed icon on desktop.
+* Default editor window size increased to 1024x768
+* Linux window size restore improved.
+* Fixed mouse UI UX issues (dragging and dropping of text now supported again) (by nightwing)
+* New commands:
+    * `Navigate:Last Edit Point` (useful to go back to last location you were editing after jumping to a symbol)
+    * `Window:List` (lists all open Zed windows and allows you to quickly jump to one)
+* Keyboard shortcuts have been refactored here and there to better support non-Mac OSes (ChromeOS, Linux, Windows) -- check the command when one you were accustomed to no longer works.
+* Fixed Coffeescript display bug (by nightwing)
+
 0.13.0
 ------
 Big new features in this release:

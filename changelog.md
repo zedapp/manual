@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.1
+-----
+
+* Many bug fixes
+* Upgraded to latest ACE, with improved Vim mode and other improvements
+* Window size persistence tweaks
+* Internal: old symbol databases are now cleaned up (after 2 weeks)
+* Auto symbol indexing fixed
+* Modes:
+    * XML: Fixed beautify feature
+    * New Elixer mode
+    * New Elm mode
+    * HTML: now also opens .htm files
+    * Erlang: now also used for header files (opie4624)
+
 1.0.0
 -----
 

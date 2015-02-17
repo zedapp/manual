@@ -8,6 +8,7 @@ navigation keys to navigate this manual, for instance using `Navigate:Goto` to o
 * Managing projects: [projects]
 * Navigating a project: [navigation]
 * Edit remote files with Zed: [remote]
+* Zedd: [zedd]
 * Commands and keys [commands]
 * Editing basics: [editingbasics]
 * Multiple cursor editing: [cursors]

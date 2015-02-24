@@ -1,6 +1,29 @@
 Changelog
 =========
 
+1.1.0
+------
+
+* New project type: Zedd Folder (for editing of local and remote files), see http://zedapp.org/zedd for more details on how and when to use this.
+* Support for running external tools in Zedd projects as well as Standalone local folder projects. This enables new commands and packages like:
+    * `Tools:External:Insert Command Output`
+    * `Tools:External:Filter Selection Through Command`
+    * Package (included by default): git-tools which exposes commands like:
+        * `Git:Grep`
+        * `Git:Add`
+        * `Git:Commit`
+        * `Git:Diff`
+        * `Git:Status`
+        * `Git:Blame`
+* Chrome App only: ability to just open one or a few files (rather than a whole folder)
+* Zed version number now visible in project picker
+* Theme split: you can now configure your "window theme" and "editor theme" separately (by TheKiteEatingTree)
+* Multiple sandboxes: many tasks (such as checking, code completion) now happen in separate sandboxes (= threads) to speed up certain tasks. Sandboxes are automatically cleaned up after a timeout.
+* Better handling of projects that are no longer accessible (removed from recent project list when opened and alert window)
+* Modes:
+    * JSX mode (React) updated to 0.12
+
+
 1.0.1
 -----
 
